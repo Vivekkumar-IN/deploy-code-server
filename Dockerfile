@@ -1,5 +1,5 @@
 # Start from the code-server Debian base image
-FROM codercom/code-server:4.99.4-39
+FROM ghcr.io/coder/code-server:4.99.4-39
 
 USER coder
 
