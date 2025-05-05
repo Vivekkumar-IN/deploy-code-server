@@ -1,5 +1,5 @@
 # Start from the code-server Debian base image
-FROM ghcr.io/coder/code-server:4.99.4-39
+FROM codercom/code-server:4.9.0
 
 USER coder
 
@@ -31,10 +31,6 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
-
-RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
-RUN sudo apt-get install -y nodejs
-
 
 # -----------
 
